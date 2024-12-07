@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".PerbaikanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="235dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Laporan_Perbaikan"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="681dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@color/cyan_600"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/info"
+                            android:src="@drawable/ic_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/text_info"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <!-- F E E D E R -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/feeder"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/inputFeeder"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:autofillHints="masukkan Feeder"
+                            android:backgroundTint="@color/cyan_600"
+                            android:hint="@string/input_feeder"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="16"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <!-- N O M O R  T I A N G -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/NoPole"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/inputNoPole"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/cyan_600"
+                            android:hint="@string/input_NoPole"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <!-- T I P E  P E R A L A T A N -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="364dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tipe"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/inputTipePeralatan"
+                                android:layout_width="352dp"
+                                android:layout_height="50dp"
+                                android:autofillHints=""
+                                android:backgroundTint="@color/cyan_600"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/input_tipe"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" />
+
+                    </LinearLayout>
+
+
+                    <!-- T E M U A N -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:text="@string/temuan"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/inputTemuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/cyan_600"
+                            android:hint="@string/input_temuan"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+
+                <!-- U N G G A H  H A S I L  T E M U A N -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/unggah"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/imageRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="113dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageButton
+                            android:id="@+id/btnChooseImage"
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:background="@color/cyan_600"
+                            android:contentDescription="@string/galeri"
+                            app:srcCompat="@drawable/ic_attach_file" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="@string/Submit"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:theme="@style/FabExtendedMaterialTheme"
+        app:icon="@drawable/ic_save"
+        app:iconTint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

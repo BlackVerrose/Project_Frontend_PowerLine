@@ -1,0 +1,33 @@
+ <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:iconTint="@color/cyan_600"
+        android:title="HOME" />
+
+    <item
+        android:id="@+id/nav_Jadwal"
+        android:icon="@drawable/ic_jadwal"
+        android:iconTint="@color/cyan_600"
+        android:title="JADWAL" />
+
+     <item
+         android:id="@+id/nav_laporan"
+         android:icon="@drawable/ic_laporan"
+         android:iconTint="@color/cyan_600"
+         android:title="LAPORAN" />
+
+    <item
+        android:id="@+id/nav_lokasi"
+        android:icon="@drawable/ic_lokasi"
+        android:iconTint="@color/cyan_600"
+        android:title="LOKASI" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:iconTint="@color/cyan_600"
+        android:title="PROFIL" />
+
+</menu>

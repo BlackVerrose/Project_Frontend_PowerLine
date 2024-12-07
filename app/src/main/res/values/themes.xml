@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PROJECT_APLIKASI_MOBILE" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/cyan_600</item>
+    </style>
+
+    <style name="Theme.PROJECT_APLIKASI_MOBILE" parent="Base.Theme.PROJECT_APLIKASI_MOBILE" />
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="FabExtendedMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:backgroundTint">@color/cyan_600</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+    </style>
+
+    <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
+</resources>
